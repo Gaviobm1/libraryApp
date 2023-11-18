@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <script src="library.js" defer></script>
+</head>
+<body>
+    <div class="pageWrapper">
+    
+        
+            <dialog>
+            
+            <div class="addForm">
+            
+            <div class="inputTitle">Book Details</div>
+
+            <input type="text" id="Title" name="Title" class="bookInput" maxlength="50" placeholder="Title">
+
+            
+            <input type="text" id="Author" name="Author" class="bookInput" maxlength="50" placeholder="Author">
+
+            
+            <input type="text" id="Pages" name="Pages" class="bookInput" placeholder="No. of Pages">
+            <div class="checkBox">
+            <div><label for="Read">Have you read it?</div>
+            <input type="checkbox" id="Read" name="Read" value="false">
+            </div>
+            <div class="buttonDiv">
+            <button class="submitButton">Submit</button>
+            </div>
+            </div>
+            
+            </dialog> 
+
+        <div class="buttonDiv">
+            <button class="showButton"> + Add book</button>
+        </div>
+        <div class="bookInfo"></div>
+
+    </div>
+</body>
+</html>

@@ -4,6 +4,41 @@
     padding: 0;
 }
 
+#pageMask {
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+dialog {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+    background-color: rgb(241, 238, 238);
+    border: none;
+    z-index: 2;
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.inputTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 15px;
+}
+
 .bookInput {
     padding: 5px;
     margin: 10px;
@@ -12,15 +47,41 @@
     font-size: 1.5rem;
 }
 
-.infocard {
-    height: 20%;
+.checkBox {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    border-radius: 5px;
     padding: 10px;
-    word-wrap: break-word;
+}
+
+.checkBox > div {
+    padding-right: 10px;
+}
+
+#Read {
+    width: 20px;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
     
+}
+
+.submitButton {
+    font-size: 1.2rem;
+    width: 50%;
+    padding: 8px;
+    border: none;
+    border-radius: 2%;
+    width: 100%;
+    background-color: rgb(138, 220, 164); 
+}
+
+.showButton {
+    padding: 50px;
+    background-color: white;
+    border: none;
+    font-size: 3rem; 
 }
 
 .bookInfo {
@@ -49,11 +110,14 @@
     font-size: 1.5rem;
 }
 
-.buttonDiv {
+.infocard {
+    height: 20%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 30px;
-
+    border-radius: 5px;
+    padding: 10px;
+    word-wrap: break-word;
 }
 
 .readInfo {
@@ -67,6 +131,16 @@
     width: 100%;
 }
 
+.read {
+    background-color: rgb(26, 202, 26, 0.8);
+    color: white;
+}
+
+.notRead {
+    background-color: rgba(194, 16, 16, 0.8);
+    color: white;
+}
+
 .removeButton {
     display: flex;
     justify-content: center;
@@ -77,87 +151,24 @@
     padding: 5px;
 }
 
-.showButton {
-    padding: 50px;
-    background-color: white;
-    border: none;
-    font-size: 3rem;
-    
-}
-
-.addForm {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    
-}
 
 
-dialog {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 2%;
-    background-color: rgb(241, 238, 238);
-    border: none;
-    z-index: 2;
-}
 
-.checkBox {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
 
-.submitButton {
-    font-size: 1.2rem;
-    width: 50%;
-    padding: 8px;
-    border: none;
-    border-radius: 2%;
-    width: 100%;
-    background-color: rgb(138, 220, 164);
-    
-}
 
-.buttonDiv {
-    padding: 10px;
-}
 
-.checkBox > div {
-    padding-right: 10px;
-}
 
-#Read {
-    width: 20px;
-}
 
-.inputTitle {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    padding: 15px;
-}
 
-#pageMask {
-    background: rgba(0, 0, 0, .7);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
 
-.read {
-    
-    background-color: rgb(26, 202, 26, 0.8);
-    color: white;
-}
 
-.notRead {
-    background-color: rgba(194, 16, 16, 0.8);
-    color: white;
-}
+
+
+
+
+
+
+
+
+
+

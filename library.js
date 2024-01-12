@@ -10,11 +10,13 @@ const bookInfo = document.querySelector(".bookInfo");
 const library = [];
 
 /* Object constructor function */
-function Book(title, author, pages, read) {
+class Book{
+    constructor (title, author, pages, read) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.read = read;
+}
 }
 
 /* Function to assign the appropriate value based on whether user has read the book or not */
